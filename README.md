@@ -1,38 +1,21 @@
-# create-svelte
+# About
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the source code for my Tony's Pizza website. I created the design myself as well.
 
-## Creating a project
+Please feel free to fork and use my site as a template! Credit would be appreciated.
 
-If you're seeing this, you've probably already done this step. Congrats!
+[Tony's](https://tonys-pizza.surge.sh/) is written in Svelte with Tailwind CSS. It is a static single spage application that is hosted using Surge.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# How To Run
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Local
 
-## Developing
+##### Development
+Run `npm i && npm run dev`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+##### Production
+Run `npm i && npm run build && npm run preview`.
 
-```bash
-npm run dev
+#### Build
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Once you run `npm run build`, you will have access to a build directory. The build directory will contain the static files necessary for the application to run in production. If you wish to modify the application, it may be beneficial to modify `svelte.config.js` and replace the imported `@sveltejs/adapter-static` and its corresponding `adapter` logic.
